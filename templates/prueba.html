@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+	 crossorigin="anonymous">
+	</script>
+    <script src="script.js"></script>
+
+  </head>
+    <body onLoad = "loadData()">
+        <label for="pets">Choose your pets:</label>
+        
+        <select name="A" id="A">
+            <option value="dog">0</option>
+            <option value="cat">1</option>
+            <option value="rabbit">2</option>
+            <option value="parrot">3</option>
+        </select>
+        <select name="pets" id="pets" class="pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="parrot">Parrot</option>
+        </select>
+        <select name="pets" id="pets" class = "pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="parrot">Parrot</option>
+        </select>
+        
+        <button id="submit">Remove Selected</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <script>
+        $(document).ready(function() {
+            $('#submit').click(function() {
+                // obtener la opción seleccionada y eliminarla del DOM
+                selectedValue = console.log($('#A option:selected').value)
+                $('#A option:selected').remove();
+            });
+        });
+        </script>
+    </body>
+</html>

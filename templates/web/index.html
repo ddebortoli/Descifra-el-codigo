@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Descifra el codigo</title>
+    <!-- BOOSTRAP 4 -->
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- NAVIGATION  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin: 0">
+      <a class="navbar-brand" href="#">Descifra el codigo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Proyectos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a
+                class="dropdown-item"
+                href="https://ddebortoliportfolio.herokuapp.com/"
+                >Curriculum</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://criptobotapp.herokuapp.com/"
+                >Cripto BOT</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://speedmax-invoice.herokuapp.com/"
+                >Speedmax invoice</a
+              >
+              <a class="dropdown-item" href="#">Youtube video converter</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Body-->
+    <div class="profile-page">
+      <div class="wrapper img-bg-1">
+        <div class="container">
+          <br />
+          <div class="row">
+            <div class="col-sm-6">
+              <div
+                class="card card-body"
+                style="background-color: #ffffff00; border: 0px"
+              >
+                <!--Mis Numeros-->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary btn-lg btn-block dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="width: 100%"
+                  >
+                    Mis numeros
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="Mis"
+                    id="dropdown-style"
+                  >
+                    <div class="row">
+                      <ul>
+                        <li>
+                          <input
+                            value="0:BLANCO"
+                            type="checkbox"
+                            id="cb0"
+                            class="num"
+                          />
+                          <label for="cb0"
+                            ><img src="img/ceroBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="1:BLANCO"
+                            type="checkbox"
+                            id="cb1"
+                            class="num"
+                          />
+                          <label for="cb1"
+                            ><img src="img/unoBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="2:BLANCO"
+                            type="checkbox"
+                            id="cb2"
+                            class="num"
+                          />
+                          <label for="cb2"
+                            ><img src="img/dosBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="3:BLANCO"
+                            type="checkbox"
+                            id="cb3"
+                            class="num"
+                          />
+                          <label for="cb3"
+                            ><img src="img/tresBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="4:BLANCO"
+                            type="checkbox"
+                            id="cb4"
+                            class="num"
+                          />
+                          <label for="cb4"
+                            ><img src="img/cuatroBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="5:VERDE"
+                            type="checkbox"
+                            id="cb5"
+                            class="num"
+                          />
+                          <label for="cb5"
+                            ><img src="img/cincoBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="6:BLANCO"
+                            type="checkbox"
+                            id="cb6"
+                            class="num"
+                          />
+                          <label for="cb6"
+                            ><img src="img/seisBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="7:BLANCO"
+                            type="checkbox"
+                            id="cb7"
+                            class="num"
+                          />
+                          <label for="cb7"
+                            ><img src="img/sieteBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="8:BLANCO"
+                            type="checkbox"
+                            id="cb8"
+                            class="num"
+                          />
+                          <label for="cb8"
+                            ><img src="img/ochoBlanco.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="9:BLANCO"
+                            type="checkbox"
+                            id="cb9"
+                            class="num"
+                          />
+                          <label for="cb9"
+                            ><img src="img/nueveBlanco.png"
+                          /></label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          <input
+                            value="0:NEGRO"
+                            type="checkbox"
+                            id="cn0"
+                            class="num"
+                          />
+                          <label for="cn0"
+                            ><img src="img/ceroNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="1:NEGRO"
+                            type="checkbox"
+                            id="cn1"
+                            class="num"
+                          />
+                          <label for="cn1"
+                            ><img src="img/unoNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="2:NEGRO"
+                            type="checkbox"
+                            id="cn2"
+                            class="num"
+                          />
+                          <label for="cn2"
+                            ><img src="img/dosNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="3:NEGRO"
+                            type="checkbox"
+                            id="cn3"
+                            class="num"
+                          />
+                          <label for="cn3"
+                            ><img src="img/tresNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="4:NEGRO"
+                            type="checkbox"
+                            id="cn4"
+                            class="num"
+                          />
+                          <label for="cn4"
+                            ><img src="img/cuatroNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="5:NEGRO"
+                            type="checkbox"
+                            id="cn5"
+                            class="num"
+                          />
+                          <label for="cn5"
+                            ><img src="img/cincoNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="6:NEGRO"
+                            type="checkbox"
+                            id="cn6"
+                            class="num"
+                          />
+                          <label for="cn6"
+                            ><img src="img/seisNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="7:NEGRO"
+                            type="checkbox"
+                            id="cn7"
+                            class="num"
+                          />
+                          <label for="cn7"
+                            ><img src="img/sieteNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="8:NEGRO"
+                            type="checkbox"
+                            id="cn8"
+                            class="num"
+                          />
+                          <label for="cn8"
+                            ><img src="img/ochoNegro.png"
+                          /></label>
+                        </li>
+                        <li>
+                          <input
+                            value="9:NEGRO"
+                            type="checkbox"
+                            id="cn9"
+                            class="num"
+                          />
+                          <label for="cn9"
+                            ><img src="img/nueveNegro.png"
+                          /></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <!--Datos de partida-->
+                <div class="dropdown">
+                  <button
+                    style="width: 100%"
+                    class="btn btn-secondary btn-lg btn-block dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Datos de la partida
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    style="width: 100%"
+                    id="dropdown-style"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <form>
+                      <div
+                        class="form-row"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-sm-3">
+                          <p style="margin-top: 0; margin-bottom: 0">
+                            suma blancas
+                          </p>
+                        </div>
+                        <div class="col-sm-5">
+                          <input
+                            id="sumBlancas"
+                            type="number"
+                            min="0"
+                            max="34"
+                            class="form-control"
+                            placeholder="Suma blancas"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="form-row"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-sm-3">
+                          <p style="margin-top: 0; margin-bottom: 0">
+                            suma negras
+                          </p>
+                        </div>
+                        <div class="col-sm-5">
+                          <input
+                            id="sumNegras"
+                            type="number"
+                            min="0"
+                            max="34"
+                            class="form-control"
+                            placeholder="Suma negras"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="form-row"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-sm-3">
+                          <p style="margin-top: 0; margin-bottom: 0">
+                            cantidad negras
+                          </p>
+                        </div>
+                        <div class="col-sm-5">
+                          <input
+                            id="cantNegras"
+                            type="number"
+                            min="0"
+                            max="34"
+                            class="form-control"
+                            placeholder="Cantidad negras"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="form-row"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-sm-3">
+                          <p style="margin-top: 0; margin-bottom: 0">
+                            cantidad blancas
+                          </p>
+                        </div>
+                        <div class="col-sm-5">
+                          <input
+                            id="cantBlancas"
+                            type="number"
+                            min="0"
+                            max="34"
+                            class="form-control"
+                            placeholder="Cantidad blancas"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="form-row"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-sm-3">
+                          <p style="margin-top: 0; margin-bottom: 0">
+                            suma total
+                          </p>
+                        </div>
+                        <div class="col-sm-5">
+                          <input
+                            id="sumTotal"
+                            type="number"
+                            min="0"
+                            max="34"
+                            class="form-control"
+                            placeholder="Suma total"
+                          />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div
+                class="card card-body"
+                style="background-color: #ffffff00; border: 0px"
+              >
+                <button id="generar" class="btn btn-secondary btn-lg btn-block">
+                  Generar posibilidades
+                </button>
+                <br />
+                <div class="table-responsive" style="max-height: 600px">
+                  <table
+                    class="table table-customized table-striped"
+                    id="posibilidades"
+                  >
+                    <thead class="bg-dark">
+                      <tr>
+                        <td><strong>A</strong></td>
+                        <td><strong>B</strong></td>
+                        <td><strong>C</strong></td>
+                        <td><strong>D</strong></td>
+                        <td><strong>E</strong></td>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          let count = 0;
+          let numeros = [];
+          let colores = [];
+          $(".num").click(function () {
+            if (count >= 5 && $(this).is(":checked", false)) {
+              alert("Ya tenes tus 5 numeros");
+              $(this).prop("checked", false);
+            } else {
+              let posNumEliminar;
+              if ($(this).is(":checked")) {
+                numeros.push($(this).val().split(":")[0]);
+                colores.push($(this).val().split(":")[1]);
+                posNumEliminar = numeros.indexOf($(this).val());
+                count++;
+              } else {
+                posNumEliminar = numeros.indexOf($(this).val());
+                numeros.splice(posNumEliminar, 1);
+                colores.splice(posNumEliminar, 1);
+                count--;
+              }
+            }
+          });
+          $(".dropdown-menu").on("click", function (e) {
+            e.stopPropagation();
+          });
+
+          $("#generar").click(function () {
+            let error = false;
+            if (!error && numeros.length < 5) {
+              alert("Aun no ha ingresado sus 5 numeros");
+              error = true;
+              return false;
+            }
+            llamarAPI();
+          });
+          function llamarAPI() {
+            $('.numeroFinal').remove();
+            let req = {
+              misNumeros: {
+                A: {
+                  valor: parseInt(numeros[0]),
+                  color: colores[0],
+                },
+                B: {
+                  valor: parseInt(numeros[1]),
+                  color: colores[1],
+                },
+                C: {
+                  valor: parseInt(numeros[2]),
+                  color: colores[2],
+                },
+                D: {
+                  valor: parseInt(numeros[3]),
+                  color: colores[3],
+                },
+                E: {
+                  valor: parseInt(numeros[4]),
+                  color: colores[4],
+                },
+              },
+              "Suma total": $("#sumTotal").val() || null,
+              "Suma negros": $("#sumNegras").val() || null,
+              "Cantidad negras": $("#cantNegras").val() || null,
+              "Suma blancos": $("#sumBlancas").val() || null,
+              "Cantidad blancas": $("#cantBlancas").val() || null,
+            };
+            console.log(req)
+            let headers = new Headers();
+            headers.append("Content-Type", "application/json");
+            headers.append("Accept", "application/json");
+
+            headers.append(
+              "Access-Control-Allow-Origin",
+              "http://localhost:81"
+            );
+            headers.append("Access-Control-Allow-Credentials", "true");
+            axios
+              .post("http://127.0.0.1:81/posibilidades", req, headers)
+              .then(function (response) {
+                // función que se ejecutará al recibir una respuesta
+                recorrerItem(response["data"]["suma Blancos"]);
+                recorrerItem(response["data"]["suma Negros"]);
+                recorrerItem(response["data"]["suma Total"]);
+              })
+              .catch(function (error) {
+                // función para capturar el error
+                console.log(error);
+              })
+              .then(function () {
+                // función que siempre se ejecuta
+              });
+          }
+
+          function recorrerItem(item) {
+            for (i of item) {
+              //console.log(i);
+              añadirColumnas(i);
+            }
+          }
+          function añadirColumnas(valores) {
+            let value = '<tr class="numeroFinal">';
+            if (valores.length < 5) {
+              for (i = 0; i < 5 - valores.length; i++) {
+                value =
+                  value +
+                  '<td align="center">' +
+                  "X" +
+                  "</td>";
+              }
+            }
+            
+            let style;
+            for (valor of valores) {
+              for(clave in valor){
+                if(valor[clave] == 'BLANCO'){
+                  style = 'style="color:white;">'
+                }
+                if(valor[clave] == 'NEGRO'){
+                  style = 'style="color:black;">'
+                }
+                if(valor[clave] == 'VERDE'){
+                  style = 'style="color:#356a35;">'
+                }
+                value =
+                value +
+                '<td align="center" ' + style +
+                clave +
+                "</td>";
+              }
+              
+            }
+            $("#posibilidades").append(value + "</tr>");
+          }
+        </script>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span class="text-muted"
+          >Sitio creado por Damian Debortoli usando FLASK - BOOTSTRAP</span
+        >
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  </body>
+</html>
