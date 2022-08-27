@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 @app.route('/')
 def init():
-    return render_template('index.html')
+    pass
 
 @app.route('/posibilidades', methods=['POST'])
 def index():
@@ -76,4 +76,4 @@ def sumPorCantDigitos(numeros,resultado,cantidad):
     return subsetSum(numeros,resultado,cantidad)
 
 
-app.run(host='0.0.0.0', port=81,debug=True)
+app.run()
